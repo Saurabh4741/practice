@@ -11,27 +11,120 @@ import SwipeCards from "../components/SwipeCards";
 import ListCollection from "../components/ListCollection";
 import AutoSwipeImage from "../components/AutoSwipeImage";
 
-const product1 = () => {
+const product3 = () => {
+
+    const images = [
+        "/assets/products/fire-fight.png", // Replace with your image URLs
+        "/assets/products/industrial-RO-1.jpg",
+        "/assets/products/ro-plant-1000-lph.png",
+        "/assets/products/water-treatment-plant.jpg",
+      ];
+
+  const listItems = {
+    listArray: [
+        "1 year warranty on complete system",
+        "World class softeners",
+        "Fully Automatic",
+        "Specially designed for flats",
+        "Softener for farm house, villas, apartments",
+        "Call for regeneration",
+        "Call for AMC",
+        "You can get water hardness kit from us easily.",
+        "Hardness kit + Resin + Vessel + Multiport valves + Rock Salt",
+        "Our Manufacturing Unit is in Okhla Industrial area Phase-2, Delhi",
+        "We have more than 20 years of experience in Water Treatment."
+    ],
+    Description:
+    "Water Softener is a type of filter that removes the calcium and magnesium in hard water by using beads and cleans itself periodically by a important process called regeneration. The removal of calcium and magnesium from hard water is termed as water softening."      
+};
+
+
+  const socialLinks = [
+    { name: "GitHub", url: "https://github.com/NikhilBidhuri" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/nikhilbidhuri" },
+    { name: "Instagram", url: "https://www.instagram.com/nikhilbidhuri19" },
+    {
+      name: "Sitecore Solution",
+      url: "https://sitecoresolutionsbynikhil.blogspot.com",
+    },
+  ];
+
+  
+  const BigbData = {
+    Description:
+    "Domestic Water Softener plays an important role in water treatment industry. The system prevents scaling/hard water stains on your taps, faucets and fixtures in your bathroom and kitchen ensuring that bathroom fittings look good as new for longer.The system also protects your water using appliances like geyser, washing machine, dishwasher etc. from internal damage and corrosion, thus extending their life. Not only this, the soft water protects your hair and skin from the harmful effects of hard water. 3D Aqua provide hardness testing kit and softener regeneration rock salt to check the water hardness also. 3D Aqua is the leading Domestic Water Softener manufacturer and supplier in India. Our service team is every time ready to help you. Both types of domestic water softeners are available – Semi-automatic and Automatic Water Softeners." ,
+    Title:
+      "What Chemicx Offers",
+  };
+
+
+  const listItems1 = {
+    listArray: [
+      "Complete New setup",
+        "Best Water Softener",
+        "Get Soft Water at Home",
+        "1 Year Warranty",
+        "Own manufacturing unit",
+        "Best team of experts",
+        "24/7 Customer Support",
+        "Fully Automatic Water Softener",
+        "Prevents build-up of minerals (scale) on the inside of pipes, fixtures, and hot water heaters.",
+        "Provides Clean and Reusable Water",
+        "Keeps Disease Away & Protect Environment",
+        "We have more than 20 years of experience in Water Treatment",
+        "Lengthens the life of some appliances.",
+        "Reduces or prevents mineral spots on glassware.",
+        "Prevents or reduces soap films and detergent curds in sinks, bathtubs, and washing machines.",
+    ],
+    Description: "",
+  };
+
+
+    // Data for the Clientcards
+    const Clientcards = [
+        {
+          id: 1,
+          title: "Card Title 1",
+          description: "Description for card 1.",
+          imageUrl: "/assets/clients/SGI.jpeg",
+          linkUrl: "/link1",
+        },
+        {
+          id: 2,
+          title: "Card Title 2",
+          description: "Description for card 2.",
+          imageUrl: "/assets/clients/Dmart.jpeg",
+          linkUrl: "/link2",
+        },
+        {
+          id: 3,
+          title: "Card Title 3",
+          description: "Description for card 3.",
+          imageUrl: "/assets/clients/Indian-oil.png",
+          linkUrl: "/link3",
+        },
+      ];
+
   const servicesData = [
     {
       imageSrc: "",
       title: "Mr. Raghuram Yadav",
       description:
-        "“Would just like to take a moment and compliment the 3D Aqua Water Treatment Company. The Team guys were great to work with and very professional, yet easy to talk to. This was probably the most seamless install of RO Plant we have had in a long time.”",
+        "“Would just like to take a moment and compliment the Chemicx Water Treatment Company. The Team guys were great to work with and very professional, yet easy to talk to. This was probably the most seamless install of RO Plant we have had in a long time.”",
       link: "/sitecore",
     },
     {
       imageSrc: "",
       title: "Mr. Sumit Yadav ",
       description:
-        "“I called 3D Aqua for STP Plant in Noida Location and I got the best consultant Mr. Maharaj Singh for the same. He delivered the best product and services for STP Plant in Noida. Highly recommended for any type of work related to Sewage Treatment Plant.”I called 3D Aqua for STP Plant in Noida Location and I got the best consultant Mr. Maharaj Singh for the same. He delivered the best product and services for STP Plant in Noida. Highly recommended for any type of work related to Sewage Treatment Plant.",
+        "“I called Chemicx for STP Plant in Noida Location and I got the best consultant Mr. Maharaj Singh for the same. He delivered the best product and services for STP Plant in Noida. Highly recommended for any type of work related to Sewage Treatment Plant.”I called Chemicx for STP Plant in Noida Location and I got the best consultant Mr. Maharaj Singh for the same. He delivered the best product and services for STP Plant in Noida. Highly recommended for any type of work related to Sewage Treatment Plant.",
       link: "/xmcloud",
     },
     {
       imageSrc: "",
       title: "Mrs. Rashmi Desai ",
       description:
-        "“We just had a new water treatment system installed by 3D Aqua Water Treatment in Rajasthan & can’t speak highly enough about this company. From the initial call to the assessment & installation, they were top-notch - prompt, professional & courteous. If you’re looking for a water treatment system look them up, you won’t be disappointed!”",
+        "“We just had a new water treatment system installed by Chemicx Water Treatment in Rajasthan & can’t speak highly enough about this company. From the initial call to the assessment & installation, they were top-notch - prompt, professional & courteous. If you’re looking for a water treatment system look them up, you won’t be disappointed!”",
       link: "/customsitecore",
     },
   ];
@@ -62,83 +155,7 @@ const product1 = () => {
     buttonText: "Submit now",
     buttonIcon: "/assets/right-arrow-white.png",
   };
-
-  const socialLinks = [
-    { name: "GitHub", url: "https://github.com/NikhilBidhuri" },
-    { name: "LinkedIn", url: "https://www.linkedin.com/in/nikhilbidhuri" },
-    { name: "Instagram", url: "https://www.instagram.com/nikhilbidhuri19" },
-    {
-      name: "Sitecore Solution",
-      url: "https://sitecoresolutionsbynikhil.blogspot.com",
-    },
-  ];
-
-  const BigbData = {
-    Description:
-      "As India hurtles towards a more developed economy one of the casualties has been the deteriorating state of our environment. Rapid industrialization has unfortunately hiked up the number of pollutants in our surroundings. One of these pollutants is wastewater or Sewage. Management of waste water through sewage treatment plants in India has become an imperative of our cities today.Water pollution in India is posing a significant threat to human health. Large volumes of unprocessed wastewater are being discharged by industries into freshwater sources, resulting in frequent outbreak of water-borne diseases and environmental degradation. This discharge of unprocessed waste into freshwater bodies is making water unfit not only for human consumption but also for industrial and agricultural use.India’s population of 1.3 billion is growing about 1.3 per cent annually and the demand for clean water by 2030 may exceed supply by 50 per cent. To ensure that this impending water crisis is avoided effective water and waste- water management highly crucial in India. Various authorities have initiated concentrated efforts towards wastewater management in India.",
-    Title: "Sewage Treatment PlantManufacturer – 3D Aqua",
-  };
-  // Data for the Clientcards
-  const Clientcards = [
-    {
-      id: 1,
-      title: "Card Title 1",
-      description: "Description for card 1.",
-      imageUrl: "/assets/clients/SGI.jpeg",
-      linkUrl: "/link1",
-    },
-    {
-      id: 2,
-      title: "Card Title 2",
-      description: "Description for card 2.",
-      imageUrl: "/assets/clients/Dmart.jpeg",
-      linkUrl: "/link2",
-    },
-    {
-      id: 3,
-      title: "Card Title 3",
-      description: "Description for card 3.",
-      imageUrl: "/assets/clients/Indian-oil.png",
-      linkUrl: "/link3",
-    },
-  ];
-  const listItems = {
-    listArray: [
-      "Basic innovation utilized is enacted slop process",
-      "Compact with low foot print",
-      "Completely expels hurtful components from modern effluents",
-      "Easy to install",
-      "Economical to use",
-      "Energy proficient",
-      "Fully automatic",
-      "High speed processing",
-    ],
-    Description:
-      "Sewage treatment or STP plant is used to remove contaminants from waste water. It involves physical, chemical and biological process to remove physical, chemical and biological contaminants.STP Plant is very effective and economical. 3D Aqua is the manufacturer of STP plants in civil and mechanical both. Our clients give positive feedback for the compact design, user friendly, durability, low maintenance, corrosion resistance and longer service life features of all our STP plant structures and performance.",
-  };
-  const listItems1 = {
-    listArray: [
-      "Submerged Aeration Fixed Film (SAFF) Technology",
-
-      "Fixed Bed Biofilm Activated Sludge Process (FBAS)",
-      "Rim flow Sludge Suction Clarifiers/Bio Tower",
-      "Improved Circular Secondary Clarifier",
-      "Eco-Bio Blocks",
-      "Sequencing Batch Reactor (SBR)",
-      "Moving Bed Bio Reactor (MBBR) / Fluidized Aerobic Bioreactor (FAB)",
-      "Membrane Bio Reactor (MBR)",
-      "BIOFOR Technology (Biological Filtration and Oxygenated Reactor)",
-      "High Rate Activated Sludge BIOFOR-F Technology",
-    ],
-    Description: "",
-  };
-
-  const images = [
-    '/assets/products/fire-fight.png', // Replace with your image URLs
-    '/assets/products/industrial-RO-1.jpg',
-    '/assets/products/ro-plant-1000-lph.png',
-    '/assets/products/water-treatment-plant.jpg',
-  ];
+ 
 
   return (
     <>
@@ -208,21 +225,20 @@ const product1 = () => {
         menuIconSrc="/assets/menu-black.png"
         closeIconSrc="/assets/close-black.png"
       />
-      
 
       <AutoSwipeImage images={images} />
 
       <ListCollection
         listItems={listItems?.listArray}
         Description={listItems?.Description}
-        LeftTitle="Sewage Treatment Plant(STP)"
+        LeftTitle="Domestic Water Softeners"
         RightTitle="Our Area of Expertise"
         CTA=""
         url="/"
       />
 
       <BigBanner
-        Img="/assets/products/STP.png"
+        Img="/assets/products/DomesticWaterSoft.png"
         Title={BigbData?.Title}
         Description={BigbData?.Description}
         CTA=""
@@ -231,7 +247,7 @@ const product1 = () => {
       <ListCollection
         listItems={listItems1?.listArray}
         Description={listItems1?.Description}
-        LeftTitle="Technology We are Using"
+        LeftTitle="Domestic Water Softener plays an important role in water treatment industry."
         RightTitle="IMPORTANT ROLE"
         CTA=""
         url="/"
@@ -254,4 +270,4 @@ const product1 = () => {
   );
 };
 
-export default product1;
+export default product3;

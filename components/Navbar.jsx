@@ -1,10 +1,12 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 
 const Navbar = ({ logoSrc, logoAlt, navLinks, contactLink, menuIconSrc, closeIconSrc }) => {
   const sideMenuRef = useRef();
   const navRef = useRef();
   const navLinkRef = useRef();
+  const [openSubMenuIndex, setOpenSubMenuIndex] = useState(null); // Track open submenu for desktop
+  const [openMobileSubMenuIndex, setOpenMobileSubMenuIndex] = useState(null); // Track open submenu for mobile
 
   const openMenu = () => {
     sideMenuRef.current.style.transform = 'translateX(-16rem)';
@@ -12,6 +14,15 @@ const Navbar = ({ logoSrc, logoAlt, navLinks, contactLink, menuIconSrc, closeIco
 
   const closeMenu = () => {
     sideMenuRef.current.style.transform = 'translateX(16rem)';
+    setOpenMobileSubMenuIndex(null); // Close mobile submenus when menu is closed
+  };
+
+  const toggleSubMenu = (index) => {
+    setOpenSubMenuIndex(openSubMenuIndex === index ? null : index);
+  };
+
+  const toggleMobileSubMenu = (index) => {
+    setOpenMobileSubMenuIndex(openMobileSubMenuIndex === index ? null : index);
   };
 
   const toggleTheme = (forceLight = true) => {
@@ -54,8 +65,21 @@ const Navbar = ({ logoSrc, logoAlt, navLinks, contactLink, menuIconSrc, closeIco
 
         <ul ref={navLinkRef} className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo">
           {navLinks.map((link, index) => (
-            <li key={index}>
-              <Link href={link.href}>{link.label}</Link>
+            <li key={index} className="relative">
+              <button onClick={() => toggleSubMenu(index)} className="focus:outline-none">
+                {link.label}
+              </button>
+              {link.subMenu && openSubMenuIndex === index && (
+                <ul className="absolute left-0 mt-2 py-2 w-48 bg-white shadow-lg rounded-md">
+                  {link.subMenu.map((subLink, subIndex) => (
+                    <li key={subIndex}>
+                      <Link href={subLink.href} className="block px-4 py-2 hover:bg-gray-200">
+                        {subLink.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           ))}
         </ul>
@@ -79,7 +103,28 @@ const Navbar = ({ logoSrc, logoAlt, navLinks, contactLink, menuIconSrc, closeIco
           </div>
           {navLinks.map((link, index) => (
             <li key={index}>
-              <Link href={link.href} onClick={closeMenu}>{link.label}</Link>
+              {link.subMenu ? (
+                <>
+                  <button onClick={() => toggleMobileSubMenu(index)} className="focus:outline-none">
+                    {link.label}
+                  </button>
+                  {openMobileSubMenuIndex === index && (
+                    <ul className="ml-4 mt-2">
+                      {link.subMenu.map((subLink, subIndex) => (
+                        <li key={subIndex}>
+                          <Link href={subLink.href} onClick={closeMenu}>
+                            {subLink.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </>
+              ) : (
+                <Link href={link.href} onClick={closeMenu}>
+                  {link.label}
+                </Link>
+              )}
             </li>
           ))}
         </ul>

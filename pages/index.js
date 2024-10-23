@@ -13,6 +13,29 @@ const Home = () => {
     { name: 'Instagram', url: 'https://www.instagram.com/nikhilbidhuri19' },
     { name: 'Sitecore Solution', url: 'https://sitecoresolutionsbynikhil.blogspot.com' }
   ];
+  const navLinks = [
+    {
+      label: 'Home',
+      href: '/',
+    },
+    {
+      label: 'Products',
+      subMenu: [
+        { label: 'Sewage treatment plant', href: '/sewage-treatment-plant' },
+        { label: 'Effluent treatment plant', href: '/effluent-treatment-plant' },
+        { label: 'Domestic water softener', href: '/domestic-water-softener' },
+        { label: 'Commercial RO plant', href: '/commercial-ro-plant' },
+        { label: 'Domestic water softener', href: '/domestic-water-softener' },
+        { label: 'Domestic water softener', href: '/domestic-water-softener' },
+      ],
+    },
+    {
+      label: 'About Us',
+      href: '/about',
+    },
+  ];
+  
+  const contactLink = { label: 'Contact Us', href: '/contact' };
   
   const servicesData = [
     {
@@ -69,13 +92,8 @@ const Home = () => {
       <Navbar
         logoSrc="/assets/logo.jpg"
         logoAlt="Logo"
-        navLinks={[
-          { href: '/', label: 'Home' },
-          { href: '#services', label: 'Company Profile' },
-          { href: '/nikhilbidhuri', label: 'Clients' },
-          { href: '/product1', label: 'Products' },
-        ]}
-        contactLink={{ href: '/contactus', label: 'Contact' }}
+        navLinks={navLinks}
+        contactLink={contactLink}
         menuIconSrc="/assets/menu-black.png"
         closeIconSrc="/assets/close-black.png"
       />

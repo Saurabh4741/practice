@@ -78,8 +78,8 @@ const Services = ({ servicesData = [], title, subtitle, description }) => {
 
   return (
     <div id="services" className="w-full px-[12%] py-10 scroll-mt-20 relative">
-      <h4 className="text-center mb-2 text-lg font-Ovo">{title}</h4>
-      <h2 className="text-center text-5xl font-Ovo">{subtitle}</h2>
+      <h4 className="text-center mb-2 text-lg text-5xl font-bold">{title}</h4>
+      <h2 className="text-center text-4xl font-bold">{subtitle}</h2>
       <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
         {description}
       </p>
