@@ -11,7 +11,7 @@ import SwipeCards from "../components/SwipeCards";
 import ListCollection from "../components/ListCollection";
 import AutoSwipeImage from "../components/AutoSwipeImage";
 
-const product3 = () => {
+const product6 = () => {
   const images = [
     "/assets/products/FF-big.jpg",
     "/assets/products/industrial-RO-1.jpg",
@@ -21,55 +21,41 @@ const product3 = () => {
 
   const listItems = {
     listArray: [
-      "1 year warranty on complete system",
-      "World class softeners",
-      "Fully Automatic",
-      "Specially designed for flats",
-      "Softener for farm house, villas, apartments",
-      "Call for regeneration",
-      "Call for AMC",
-      "You can get water hardness kit from us easily.",
-      "Hardness kit + Resin + Vessel + Multiport valves + Rock Salt",
-      "Our Manufacturing Unit is in Okhla Industrial area Phase-2, Delhi",
-      "We have more than 20 years of experience in Water Treatment.",
+      "Heat detector",
+      "Smoke detector",
+      "Flame Detector",
+      "Multi-sensor detector",
+      "Infrared (IR) detector",
+      "Carbon Monoxide detector",
+      "Wireless Fire Alarm system",
+      "Manual fire alarm system",
+      "Automatic fire alarm system",
+      "Addressable fire alarm system",
+      "Conventional fire alarm system",
     ],
     Description:
-      "Water Softener is a type of filter that removes the calcium and magnesium in hard water by using beads and cleans itself periodically by a important process called regeneration. The removal of calcium and magnesium from hard water is termed as water softening.",
+      "When you have your water tank below the tapthen you need water pressure pump system. Chemicx is the manufacturer and supplier of Pressure Pumps in India and also in other countries. Water is very essential to live life but when you live in a multistorey building then it is very difficult to get water all the times very easily. We need water pressure pumps in his case that pumps up water and you will get water easily at your floor. Chemicx supplies a full line of equipment and solutions designed specifically for Water Utility Applications. Pressure Pumps help you to Optimize, Treat and Pressure Manage Water Supply. It supplies tailored solutions for the entire Water Treatment Projects. Downtime is reduced and risk minimization is built into Reliable, Cost Effective and Energy Efficient Solutions. Also offers, low life cycle costs and the hydraulic stability necessary for effective mechanical, biological and chemical treatment.",
   };
-
-  const socialLinks = [
-    { name: "GitHub", url: "https://github.com/NikhilBidhuri" },
-    { name: "LinkedIn", url: "https://www.linkedin.com/in/nikhilbidhuri" },
-    { name: "Instagram", url: "https://www.instagram.com/nikhilbidhuri19" },
-    {
-      name: "Sitecore Solution",
-      url: "https://sitecoresolutionsbynikhil.blogspot.com",
-    },
-  ];
 
   const BigbData = {
     Description:
-      "Domestic Water Softener plays an important role in water treatment industry. The system prevents scaling/hard water stains on your taps, faucets and fixtures in your bathroom and kitchen ensuring that bathroom fittings look good as new for longer.The system also protects your water using appliances like geyser, washing machine, dishwasher etc. from internal damage and corrosion, thus extending their life. Not only this, the soft water protects your hair and skin from the harmful effects of hard water. 3D Aqua provide hardness testing kit and softener regeneration rock salt to check the water hardness also. 3D Aqua is the leading Domestic Water Softener manufacturer and supplier in India. Our service team is every time ready to help you. Both types of domestic water softeners are available – Semi-automatic and Automatic Water Softeners.",
-    Title: "What Chemicx Offers",
+      "When you have your water tank below the tapthen you need water pressure pump system. Chemicx is the manufacturer and supplier of Pressure Pumps. A Booster Pump is a piece of equipment which will increase the pressure of a fluid used to deliver pressurized water to machinery and equipment. It is placed just after the Clarified water collection tank/pit and connected to the water pipes circuit. The task is to keep constant pressure in the water pipes circuit indipendently from the quantity required. The booster pump represents the State-of-the-art technology for delivering water in a smart and controlled mode. Specifically, the variable speed pump group, use pressure feedback to electronically control motor speed to maintain a reasonably constant discharge pressure. Supply pressurized water to the workshop machines and equipment modulating in real time the quantity and the pressure required from the circuit throught a smart inverter that reads the fluid dynamics and acts in relation to the sequences installed specifically by the manufacturer. To control or personalize the group performance, there is an intuitive interactive panel on each pump.",
+    Title: "Fire Sprinkler System:",
   };
 
   const listItems1 = {
     listArray: [
-      "Complete New setup",
-      "Best Water Softener",
-      "Get Soft Water at Home",
-      "1 Year Warranty",
-      "Own manufacturing unit",
-      "Best team of experts",
-      "24/7 Customer Support",
-      "Fully Automatic Water Softener",
-      "Prevents build-up of minerals (scale) on the inside of pipes, fixtures, and hot water heaters.",
-      "Provides Clean and Reusable Water",
-      "Keeps Disease Away & Protect Environment",
-      "We have more than 20 years of experience in Water Treatment",
-      "Lengthens the life of some appliances.",
-      "Reduces or prevents mineral spots on glassware.",
-      "Prevents or reduces soap films and detergent curds in sinks, bathtubs, and washing machines.",
+      "High pressure showers",
+      "High pressure water supply to Bungalows/ small apartment complexes/ hostels/ hotels",
+      "Gardening easily",
+      "Domestic use of water in car washing",
+      "Small Gardens",
+      "Automatic on-off feature",
+      "Ready for use",
+      "Same water pressure at all floors of multi-storey Apartments",
+      "Can be used to raise the water pressure which is supplied to your homes.",
+      "High water pressure can be solved by employing a water pressure pump",
+      "Whenever we open the tap once more, the pressure falls very rapidly and a little amount of water will come out.",
     ],
     Description: "",
   };
@@ -235,14 +221,14 @@ const product3 = () => {
       <ListCollection
         listItems={listItems?.listArray}
         Description={listItems?.Description}
-        LeftTitle="Domestic Water Softeners"
+        LeftTitle="Commercial RO Plants"
         RightTitle="Our Area of Expertise"
         CTA=""
         url="/"
       />
 
       <BigBanner
-        Img="/assets/products/DomesticWaterSoft.png"
+        Img="/assets/products/PP.png"
         Title={BigbData?.Title}
         Description={BigbData?.Description}
         CTA=""
@@ -251,7 +237,7 @@ const product3 = () => {
       <ListCollection
         listItems={listItems1?.listArray}
         Description={listItems1?.Description}
-        LeftTitle="Domestic Water Softener plays an important role in water treatment industry."
+        LeftTitle="Feature:"
         RightTitle="IMPORTANT ROLE"
         CTA=""
         url="/"
@@ -265,13 +251,9 @@ const product3 = () => {
       />
 
       <Contact formConfig={contactFormConfig} />
-      <Footer
-        email="Nikhilbidhuri1@gmail.com"
-        phone="+91 9999455596"
-        socialLinks={socialLinks}
-      />
+      <Footer />
     </>
   );
 };
 
-export default product3;
+export default product6;

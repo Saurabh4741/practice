@@ -12,13 +12,12 @@ import ListCollection from "../components/ListCollection";
 import AutoSwipeImage from "../components/AutoSwipeImage";
 
 const product2 = () => {
-
-    const images = [
-        "/assets/products/fire-fight.png", // Replace with your image URLs
-        "/assets/products/industrial-RO-1.jpg",
-        "/assets/products/ro-plant-1000-lph.png",
-        "/assets/products/water-treatment-plant.jpg",
-      ];
+  const images = [
+    "/assets/products/FF-big.jpg",
+    "/assets/products/industrial-RO-1.jpg",
+    "/assets/products/ro-plant-1000-lph.png",
+    "/assets/products/water-treatment-plant.jpg",
+  ];
 
   const listItems = {
     listArray: [
@@ -34,7 +33,6 @@ const product2 = () => {
     Description:
       "Effluent Treatment Plants or ETPs are used to remove any toxic substances from water and make water pure. Chemicx is the manufacturer of ETP Plants in Civil and Mechanical both.Industrial wastewater (effluent) is treated in a number of ways; the level of treatment decides which is appropriate. Basically there are four steps: Preliminary, Primary, Secondary and Tertiary. Preliminary Treatment: Screening, grit and oil removal are done at preliminary treatment process. Primary Treatment: Primary treatment involves removal of suspended solids up to 50% and reducing BOD level up to 30%. Secondary Treatment: This is sometimes referred to Biological Treatment. Through biological processes, dissolved and suspended organic wastes are converted to more stable solids and removed by settling.Tertiary Treatment: It is the final stage which involves physical, chemical and biological processes to remove residual suspended solids and dissolved solids.",
   };
-
 
   const socialLinks = [
     { name: "GitHub", url: "https://github.com/NikhilBidhuri" },
@@ -53,7 +51,6 @@ const product2 = () => {
       "Other Effluent Treatment Plant Manufacturers Don’t Compare to Chemicx ?Do you want really know why",
   };
 
-
   const listItems1 = {
     listArray: [
       "Preliminary Treatment: Screening, grit and oil removal are done at preliminary treatment process.",
@@ -64,31 +61,30 @@ const product2 = () => {
     Description: "",
   };
 
-    // Data for the Clientcards
-    const Clientcards = [
-        {
-          id: 1,
-          title: "Card Title 1",
-          description: "Description for card 1.",
-          imageUrl: "/assets/clients/SGI.jpeg",
-          linkUrl: "/link1",
-        },
-        {
-          id: 2,
-          title: "Card Title 2",
-          description: "Description for card 2.",
-          imageUrl: "/assets/clients/Dmart.jpeg",
-          linkUrl: "/link2",
-        },
-        {
-          id: 3,
-          title: "Card Title 3",
-          description: "Description for card 3.",
-          imageUrl: "/assets/clients/Indian-oil.png",
-          linkUrl: "/link3",
-        },
-      ];
-    
+  // Data for the Clientcards
+  const Clientcards = [
+    {
+      id: 1,
+      title: "Card Title 1",
+      description: "Description for card 1.",
+      imageUrl: "/assets/clients/SGI.jpeg",
+      linkUrl: "/link1",
+    },
+    {
+      id: 2,
+      title: "Card Title 2",
+      description: "Description for card 2.",
+      imageUrl: "/assets/clients/Dmart.jpeg",
+      linkUrl: "/link2",
+    },
+    {
+      id: 3,
+      title: "Card Title 3",
+      description: "Description for card 3.",
+      imageUrl: "/assets/clients/Indian-oil.png",
+      linkUrl: "/link3",
+    },
+  ];
 
   const servicesData = [
     {
@@ -140,7 +136,6 @@ const product2 = () => {
     buttonText: "Submit now",
     buttonIcon: "/assets/right-arrow-white.png",
   };
- 
 
   return (
     <>
@@ -194,14 +189,25 @@ const product2 = () => {
           { href: "#about", label: "About" },
           { href: "#services", label: "Services" },
           {
-            label: 'Products',
+            label: "Products",
             subMenu: [
-              { label: 'Sewage treatment plant', href: '/sewage-treatment-plant' },
-              { label: 'Effluent treatment plant', href: '/effluent-treatment-plant' },
-              { label: 'Domestic water softener', href: '/domestic-water-softener' },
-              { label: 'Commercial RO plant', href: '/commercial-ro-plant' },
-              { label: 'Domestic water softener', href: '/domestic-water-softener' },
-              { label: 'Domestic water softener', href: '/domestic-water-softener' },
+              {
+                label: "Sewage treatment plant",
+                href: "/sewage-treatment-plant",
+              },
+              {
+                label: "Effluent treatment plant",
+                href: "/effluent-treatment-plant",
+              },
+              {
+                label: "Domestic water softener",
+                href: "/domestic-water-softener",
+              },
+              { label: "Commercial RO plant", href: "/commercial-ro-plant" },
+              { label: "Ultra filtration", href: "/ultra-filtration" },
+              { label: "Pressure Pump", href: "/pressure-pump" },
+              { label: "Fire fighting", href: "/firefighting" },
+              { label: "Water cooler", href: "/water-cooler" },
             ],
           },
           { href: "#contact", label: "Contact" },

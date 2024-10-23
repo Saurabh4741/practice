@@ -25,8 +25,10 @@ const Home = () => {
         { label: 'Effluent treatment plant', href: '/effluent-treatment-plant' },
         { label: 'Domestic water softener', href: '/domestic-water-softener' },
         { label: 'Commercial RO plant', href: '/commercial-ro-plant' },
-        { label: 'Domestic water softener', href: '/domestic-water-softener' },
-        { label: 'Domestic water softener', href: '/domestic-water-softener' },
+        { label: 'Ultra filtration', href: '/ultra-filtration' },
+        { label: 'Pressure Pump', href: '/pressure-pump' },
+        { label: 'Fire fighting', href: '/firefighting' },
+        { label: 'Water cooler', href: '/water-cooler' },
       ],
     },
     {

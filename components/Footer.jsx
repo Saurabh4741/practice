@@ -1,6 +1,11 @@
-import React from 'react';
-import Link from 'next/link';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import React from "react";
+import Link from "next/link";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -11,14 +16,38 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:underline">About Us</a></li>
-              <li><a href="#" className="hover:underline">Careers</a></li>
-              <li><a href="#" className="hover:underline">Press</a></li>
-              <li><a href="#" className="hover:underline">Blog</a></li>
-              <li><a className="hover:underline">Help Center</a></li>
-              <li><a className="hover:underline">Terms of Service</a></li>
-              <li><a className="hover:underline">Privacy Policy</a></li>
-              <li><a className="hover:underline">Contact Us</a></li>
+              <li>
+                <a href="#" className="hover:underline">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Press
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a className="hover:underline">Help Center</a>
+              </li>
+              <li>
+                <a className="hover:underline">Terms of Service</a>
+              </li>
+              <li>
+                <a className="hover:underline">Privacy Policy</a>
+              </li>
+              <li>
+                <a className="hover:underline">Contact Us</a>
+              </li>
             </ul>
           </div>
 
@@ -26,30 +55,70 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Products & Services </h3>
             <ul className="space-y-2">
-              <li><a className="hover:underline">Water Treatment Plant</a></li>
-              <li><a className="hover:underline">Commercial Water Softener</a></li>
-              <li><a className="hover:underline">Domestic Water Softener</a></li>
-              <li><a className="hover:underline">Industrial RO Plant</a></li>
-              <li><a className="hover:underline">Commercial RO Plant</a></li>
-              <li><a className="hover:underline">Water ATM</a></li>
-              <li><a className="hover:underline">Iron Remover</a></li>
-              <li><a className="hover:underline">Fire Fighting System</a></li>
-
+              <li>
+                <a href="/effluent-treatment-plant" className="hover:underline">
+                  Effluent treatment plant
+                </a>
+              </li>
+              <li>
+                <a href="/domestic-water-softener" className="hover:underline">
+                  Commercial Water Softener
+                </a>
+              </li>
+              <li>
+                <a href="/domestic-water-softener" className="hover:underline">
+                  Domestic Water Softener
+                </a>
+              </li>
+              <li>
+                <a href="/commercial-ro-plant" className="hover:underline">
+                  Industrial RO Plant
+                </a>
+              </li>
+              <li>
+                <a href="/commercial-ro-plant" className="hover:underline">
+                  Commercial RO Plant
+                </a>
+              </li>
+              <li>
+                <a href="/ultra-filtration" className="hover:underline">
+                  Ultra Filteration
+                </a>
+              </li>
             </ul>
           </div>
 
           {/* Column 3 */}
           <div>
-
-            <ul className="space-y-2 mt-12">
-              <li><a className="hover:underline">Dosing System</a></li>
-              <li><a className="hover:underline">Ultra Filtration System</a></li>
-              <li><a className="hover:underline">Bottling Plant</a></li>
-              <li><a className="hover:underline">DM Plant</a></li>
-              <li><a className="hover:underline">Sewage Treatment Plant</a></li>
-              <li><a className="hover:underline">Pressure Pump</a></li>
-              <li><a className="hover:underline">Activated Carbon Filter</a></li>
-              <li><a className="hover:underline">Sand Filter</a></li>
+            <ul className="space-y-2 mt-10">
+              <li>
+                <a href="/water-cooler" className="hover:underline">
+                  Water Cooler
+                </a>
+              </li>
+              <li>
+                <a href="/ultra-filtration" className="hover:underline">
+                  Ultra Filtration System
+                </a>
+              </li>
+              <li>
+                <a className="hover:underline">Bottling Plant</a>
+              </li>
+              <li>
+                <a href="/Sewage treatment plant" className="hover:underline">
+                  Sewage Treatment Plant
+                </a>
+              </li>
+              <li>
+                <a href="/pressure-pump" className="hover:underline">
+                  Pressure Pump
+                </a>
+              </li>
+              <li>
+                <a href="/firefighting" className="hover:underline">
+                  SFire Fighting
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -57,15 +126,23 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white"><FaFacebookF size={20} /></a>
-              <a href="#" className="text-gray-400 hover:text-white"><FaTwitter size={20} /></a>
-              <a href="#" className="text-gray-400 hover:text-white"><FaInstagram size={20} /></a>
-              <a href="#" className="text-gray-400 hover:text-white"><FaLinkedinIn size={20} /></a>
+              <a href="#" className="text-gray-400 hover:text-white">
+                <FaFacebookF size={20} />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white">
+                <FaTwitter size={20} />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white">
+                <FaInstagram size={20} />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white">
+                <FaLinkedinIn size={20} />
+              </a>
             </div>
           </div>
         </div>
         <div className="text-center text-gray-500 mt-8">
-          &copy; {new Date().getFullYear()} My Company. All rights reserved.
+          &copy; {new Date().getFullYear()} Chemicx. All rights reserved.
         </div>
       </div>
     </footer>

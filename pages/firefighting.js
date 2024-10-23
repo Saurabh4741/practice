@@ -11,7 +11,7 @@ import SwipeCards from "../components/SwipeCards";
 import ListCollection from "../components/ListCollection";
 import AutoSwipeImage from "../components/AutoSwipeImage";
 
-const product3 = () => {
+const product6 = () => {
   const images = [
     "/assets/products/FF-big.jpg",
     "/assets/products/industrial-RO-1.jpg",
@@ -21,55 +21,43 @@ const product3 = () => {
 
   const listItems = {
     listArray: [
-      "1 year warranty on complete system",
-      "World class softeners",
-      "Fully Automatic",
-      "Specially designed for flats",
-      "Softener for farm house, villas, apartments",
-      "Call for regeneration",
-      "Call for AMC",
-      "You can get water hardness kit from us easily.",
-      "Hardness kit + Resin + Vessel + Multiport valves + Rock Salt",
-      "Our Manufacturing Unit is in Okhla Industrial area Phase-2, Delhi",
-      "We have more than 20 years of experience in Water Treatment.",
+      "Heat detector",
+      "Smoke detector",
+      "Flame Detector",
+      "Multi-sensor detector",
+      "Infrared (IR) detector",
+      "Carbon Monoxide detector",
+      "Wireless Fire Alarm system",
+      "Manual fire alarm system",
+      "Automatic fire alarm system",
+      "Addressable fire alarm system",
+      "Conventional fire alarm system",
     ],
     Description:
-      "Water Softener is a type of filter that removes the calcium and magnesium in hard water by using beads and cleans itself periodically by a important process called regeneration. The removal of calcium and magnesium from hard water is termed as water softening.",
+      "The Fire Emergencies are unpredictable and costly for lives and property . To manage risk and hazards you need to be Fire Fighting system in building with count of ability that control fire. Sea Max Fire Engineering Works Protect Your Building and it’s occupancies to a bounce fire protection plan.",
   };
-
-  const socialLinks = [
-    { name: "GitHub", url: "https://github.com/NikhilBidhuri" },
-    { name: "LinkedIn", url: "https://www.linkedin.com/in/nikhilbidhuri" },
-    { name: "Instagram", url: "https://www.instagram.com/nikhilbidhuri19" },
-    {
-      name: "Sitecore Solution",
-      url: "https://sitecoresolutionsbynikhil.blogspot.com",
-    },
-  ];
 
   const BigbData = {
     Description:
-      "Domestic Water Softener plays an important role in water treatment industry. The system prevents scaling/hard water stains on your taps, faucets and fixtures in your bathroom and kitchen ensuring that bathroom fittings look good as new for longer.The system also protects your water using appliances like geyser, washing machine, dishwasher etc. from internal damage and corrosion, thus extending their life. Not only this, the soft water protects your hair and skin from the harmful effects of hard water. 3D Aqua provide hardness testing kit and softener regeneration rock salt to check the water hardness also. 3D Aqua is the leading Domestic Water Softener manufacturer and supplier in India. Our service team is every time ready to help you. Both types of domestic water softeners are available – Semi-automatic and Automatic Water Softeners.",
-    Title: "What Chemicx Offers",
+      "The Fire Sprinkler Systems performs various function which control or extinguish fire. Fire sprinkler system are most effective way which control fire and reduces the the loss of life, goods and property. These fire sprinkler system is the key component of fire fighting protection system that extinguish fire. These fire sprinkler respond to all type of fire while it is small or Major fire.",
+    Title: "Fire Sprinkler System:",
   };
 
   const listItems1 = {
     listArray: [
-      "Complete New setup",
-      "Best Water Softener",
-      "Get Soft Water at Home",
-      "1 Year Warranty",
-      "Own manufacturing unit",
-      "Best team of experts",
-      "24/7 Customer Support",
-      "Fully Automatic Water Softener",
-      "Prevents build-up of minerals (scale) on the inside of pipes, fixtures, and hot water heaters.",
-      "Provides Clean and Reusable Water",
-      "Keeps Disease Away & Protect Environment",
-      "We have more than 20 years of experience in Water Treatment",
-      "Lengthens the life of some appliances.",
-      "Reduces or prevents mineral spots on glassware.",
-      "Prevents or reduces soap films and detergent curds in sinks, bathtubs, and washing machines.",
+      "Fire suppression system for electrical panels.",
+      "Tube based fire suppression system.",
+      "Automatic modular fire suppression system.",
+      "Clean agent fire suppression system.",
+      "Automatic fire suppression system.",
+      "Co2 fire suppression system.",
+      "Fm 200 fire suppression system.",
+      "Kitchen Fire Suppression System.",
+      "Wireless Fire Alarm system.",
+      "Manual fire alarm system.",
+      "Automatic fire alarm system.",
+      "Addressable fire alarm system.",
+      "Conventional fire alarm ",
     ],
     Description: "",
   };
@@ -235,14 +223,14 @@ const product3 = () => {
       <ListCollection
         listItems={listItems?.listArray}
         Description={listItems?.Description}
-        LeftTitle="Domestic Water Softeners"
+        LeftTitle="Commercial RO Plants"
         RightTitle="Our Area of Expertise"
         CTA=""
         url="/"
       />
 
       <BigBanner
-        Img="/assets/products/DomesticWaterSoft.png"
+        Img="/assets/products/FF.png"
         Title={BigbData?.Title}
         Description={BigbData?.Description}
         CTA=""
@@ -251,7 +239,7 @@ const product3 = () => {
       <ListCollection
         listItems={listItems1?.listArray}
         Description={listItems1?.Description}
-        LeftTitle="Domestic Water Softener plays an important role in water treatment industry."
+        LeftTitle="Main points of Fire Fighting System:"
         RightTitle="IMPORTANT ROLE"
         CTA=""
         url="/"
@@ -265,13 +253,9 @@ const product3 = () => {
       />
 
       <Contact formConfig={contactFormConfig} />
-      <Footer
-        email="Nikhilbidhuri1@gmail.com"
-        phone="+91 9999455596"
-        socialLinks={socialLinks}
-      />
+      <Footer />
     </>
   );
 };
 
-export default product3;
+export default product6;

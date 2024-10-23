@@ -14,10 +14,10 @@ import AutoSwipeImage from "../components/AutoSwipeImage";
 const product4 = () => {
 
     const images = [
-        "/assets/products/fire-fight.png", // Replace with your image URLs
-        "/assets/products/industrial-RO-1.jpg",
-        "/assets/products/ro-plant-1000-lph.png",
-        "/assets/products/water-treatment-plant.jpg",
+      "/assets/products/FF-big.jpg",
+      "/assets/products/industrial-RO-1.jpg",
+      "/assets/products/ro-plant-1000-lph.png",
+      "/assets/products/water-treatment-plant.jpg",
       ];
 
   const listItems = {
@@ -188,12 +188,23 @@ const product4 = () => {
           {
             label: 'Products',
             subMenu: [
-              { label: 'Sewage treatment plant', href: '/sewage-treatment-plant' },
-              { label: 'Effluent treatment plant', href: '/effluent-treatment-plant' },
-              { label: 'Domestic water softener', href: '/domestic-water-softener' },
-              { label: 'Commercial RO plant', href: '/commercial-ro-plant' },
-              { label: 'Domestic water softener', href: '/domestic-water-softener' },
-              { label: 'Domestic water softener', href: '/domestic-water-softener' },
+              {
+                label: "Sewage treatment plant",
+                href: "/sewage-treatment-plant",
+              },
+              {
+                label: "Effluent treatment plant",
+                href: "/effluent-treatment-plant",
+              },
+              {
+                label: "Domestic water softener",
+                href: "/domestic-water-softener",
+              },
+              { label: "Commercial RO plant", href: "/commercial-ro-plant" },
+              { label: "Ultra filtration", href: "/ultra-filtration" },
+              { label: "Pressure Pump", href: "/pressure-pump" },
+              { label: "Fire fighting", href: "/firefighting" },
+              { label: "Water cooler", href: "/water-cooler" },
             ],
           },
           { href: "#contact", label: "Contact" },

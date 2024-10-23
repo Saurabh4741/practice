@@ -11,7 +11,7 @@ import SwipeCards from "../components/SwipeCards";
 import ListCollection from "../components/ListCollection";
 import AutoSwipeImage from "../components/AutoSwipeImage";
 
-const product3 = () => {
+const product5 = () => {
   const images = [
     "/assets/products/FF-big.jpg",
     "/assets/products/industrial-RO-1.jpg",
@@ -20,56 +20,24 @@ const product3 = () => {
   ];
 
   const listItems = {
-    listArray: [
-      "1 year warranty on complete system",
-      "World class softeners",
-      "Fully Automatic",
-      "Specially designed for flats",
-      "Softener for farm house, villas, apartments",
-      "Call for regeneration",
-      "Call for AMC",
-      "You can get water hardness kit from us easily.",
-      "Hardness kit + Resin + Vessel + Multiport valves + Rock Salt",
-      "Our Manufacturing Unit is in Okhla Industrial area Phase-2, Delhi",
-      "We have more than 20 years of experience in Water Treatment.",
-    ],
+    listArray: [],
     Description:
-      "Water Softener is a type of filter that removes the calcium and magnesium in hard water by using beads and cleans itself periodically by a important process called regeneration. The removal of calcium and magnesium from hard water is termed as water softening.",
+      "The water cooler can be used both for residential use and for small commercial set-up. It can be used with a bubble top (bottle on the top) wherever plumbing connection is not possible The same unit can also be used without a bubble top (bottle on the top) and can be moved to any location wherever plumbing provision is not available. Double Extra Large water coolers are primarily required at commercial establishments with high demand and frequency of water usage. These places could be - large schools, religious public places, commercial complex etc. Water coolers with such capacities are used more at the mid-size commercial set-ups like schools, educational institutes, housing societies, office premises etc",
   };
-
-  const socialLinks = [
-    { name: "GitHub", url: "https://github.com/NikhilBidhuri" },
-    { name: "LinkedIn", url: "https://www.linkedin.com/in/nikhilbidhuri" },
-    { name: "Instagram", url: "https://www.instagram.com/nikhilbidhuri19" },
-    {
-      name: "Sitecore Solution",
-      url: "https://sitecoresolutionsbynikhil.blogspot.com",
-    },
-  ];
 
   const BigbData = {
     Description:
-      "Domestic Water Softener plays an important role in water treatment industry. The system prevents scaling/hard water stains on your taps, faucets and fixtures in your bathroom and kitchen ensuring that bathroom fittings look good as new for longer.The system also protects your water using appliances like geyser, washing machine, dishwasher etc. from internal damage and corrosion, thus extending their life. Not only this, the soft water protects your hair and skin from the harmful effects of hard water. 3D Aqua provide hardness testing kit and softener regeneration rock salt to check the water hardness also. 3D Aqua is the leading Domestic Water Softener manufacturer and supplier in India. Our service team is every time ready to help you. Both types of domestic water softeners are available – Semi-automatic and Automatic Water Softeners.",
-    Title: "What Chemicx Offers",
+      "A water cooler or water dispenser is a device that cools and dispenses water. Water coolers come in a variety of form factors, ranging from wall-mounted to bottle filler water cooler combination units, to bi-level units and other formats. They are generally broken up in two categories: point-of use (POU) water coolers and bottled water coolers. POU Water coolers are connected to a water supply, while bottled water coolers require delivery (or self-pick-up) of water in large bottles from vendors. Bottled water coolers can be top-mounted or bottom-loaded, depending on the design of the model. The water cooler can be used both for residential use and for small commercial set-up. These coolers use UV technology for last-point purification to ensure that the water remains pure and uncontaminated. These water coolers are primarily required at commercial establishments with high demand and frequency of water usage. These places could be - large schools, religious public places, commercial complex etc.",
+    Title: "Chemicx Offerings Commercial Water Cooler Services:",
   };
 
   const listItems1 = {
     listArray: [
-      "Complete New setup",
-      "Best Water Softener",
-      "Get Soft Water at Home",
-      "1 Year Warranty",
-      "Own manufacturing unit",
-      "Best team of experts",
-      "24/7 Customer Support",
-      "Fully Automatic Water Softener",
-      "Prevents build-up of minerals (scale) on the inside of pipes, fixtures, and hot water heaters.",
-      "Provides Clean and Reusable Water",
-      "Keeps Disease Away & Protect Environment",
-      "We have more than 20 years of experience in Water Treatment",
-      "Lengthens the life of some appliances.",
-      "Reduces or prevents mineral spots on glassware.",
-      "Prevents or reduces soap films and detergent curds in sinks, bathtubs, and washing machines.",
+      "Hybrid Water Coolers",
+      "Double Xtra Large (XXL) Water Coolers",
+      "Xtra Large (XL) Water Coolers",
+      "Freestanding",
+      "Large (L) Water Coolers",
     ],
     Description: "",
   };
@@ -235,14 +203,14 @@ const product3 = () => {
       <ListCollection
         listItems={listItems?.listArray}
         Description={listItems?.Description}
-        LeftTitle="Domestic Water Softeners"
+        LeftTitle="Ultra Filtration"
         RightTitle="Our Area of Expertise"
         CTA=""
         url="/"
       />
 
       <BigBanner
-        Img="/assets/products/DomesticWaterSoft.png"
+        Img="/assets/products/WC.png"
         Title={BigbData?.Title}
         Description={BigbData?.Description}
         CTA=""
@@ -251,7 +219,7 @@ const product3 = () => {
       <ListCollection
         listItems={listItems1?.listArray}
         Description={listItems1?.Description}
-        LeftTitle="Domestic Water Softener plays an important role in water treatment industry."
+        LeftTitle="Benefits and features of ultrafiltration plants"
         RightTitle="IMPORTANT ROLE"
         CTA=""
         url="/"
@@ -265,13 +233,9 @@ const product3 = () => {
       />
 
       <Contact formConfig={contactFormConfig} />
-      <Footer
-        email="Nikhilbidhuri1@gmail.com"
-        phone="+91 9999455596"
-        socialLinks={socialLinks}
-      />
+      <Footer />
     </>
   );
 };
 
-export default product3;
+export default product5;

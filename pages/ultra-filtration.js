@@ -11,7 +11,7 @@ import SwipeCards from "../components/SwipeCards";
 import ListCollection from "../components/ListCollection";
 import AutoSwipeImage from "../components/AutoSwipeImage";
 
-const product3 = () => {
+const product5 = () => {
   const images = [
     "/assets/products/FF-big.jpg",
     "/assets/products/industrial-RO-1.jpg",
@@ -20,56 +20,32 @@ const product3 = () => {
   ];
 
   const listItems = {
-    listArray: [
-      "1 year warranty on complete system",
-      "World class softeners",
-      "Fully Automatic",
-      "Specially designed for flats",
-      "Softener for farm house, villas, apartments",
-      "Call for regeneration",
-      "Call for AMC",
-      "You can get water hardness kit from us easily.",
-      "Hardness kit + Resin + Vessel + Multiport valves + Rock Salt",
-      "Our Manufacturing Unit is in Okhla Industrial area Phase-2, Delhi",
-      "We have more than 20 years of experience in Water Treatment.",
-    ],
+    listArray: [],
     Description:
-      "Water Softener is a type of filter that removes the calcium and magnesium in hard water by using beads and cleans itself periodically by a important process called regeneration. The removal of calcium and magnesium from hard water is termed as water softening.",
+      "In wastewater treatment, ultrafiltration (UF) devices are used to recycle and reuse water that contains virtually no physical solids. Ultrafiltration definition, applications and industries using these process units are covered below. Ultrafiltration (UF) is a variety of membrane filtration in which forces like pressure or concentration gradients lead to a separation through a semipermeable membrane. Suspended solids and solutes of high molecular weight are retained in the so-called retentate, while water and low molecular weight solutes pass through the membrane in the permeate.",
   };
-
-  const socialLinks = [
-    { name: "GitHub", url: "https://github.com/NikhilBidhuri" },
-    { name: "LinkedIn", url: "https://www.linkedin.com/in/nikhilbidhuri" },
-    { name: "Instagram", url: "https://www.instagram.com/nikhilbidhuri19" },
-    {
-      name: "Sitecore Solution",
-      url: "https://sitecoresolutionsbynikhil.blogspot.com",
-    },
-  ];
 
   const BigbData = {
     Description:
-      "Domestic Water Softener plays an important role in water treatment industry. The system prevents scaling/hard water stains on your taps, faucets and fixtures in your bathroom and kitchen ensuring that bathroom fittings look good as new for longer.The system also protects your water using appliances like geyser, washing machine, dishwasher etc. from internal damage and corrosion, thus extending their life. Not only this, the soft water protects your hair and skin from the harmful effects of hard water. 3D Aqua provide hardness testing kit and softener regeneration rock salt to check the water hardness also. 3D Aqua is the leading Domestic Water Softener manufacturer and supplier in India. Our service team is every time ready to help you. Both types of domestic water softeners are available – Semi-automatic and Automatic Water Softeners.",
-    Title: "What Chemicx Offers",
+      "UF can be used for removal of particulates and macromolecules from raw water, to produce potable water. It has been used to either replace existing secondary (coagulation, flocculation, sedimentation) and tertiary filtration (sand filtration and chlorination) systems employed in water-treatment plants or as standalone systems in isolated regions with growing populations. When treating water with high suspended solids, UF is often integrated into the process, using primary (screening, flotation and filtration) and some secondary treatments as pre-treatment stages. Ultrafiltration processes are preferred over traditional treatment methods for the following reasons: No chemicals required (aside from cleaning) Constant product quality regardless of feed quality Compact plant size Capable of exceeding regulatory standards of water quality, achieving 90-100% pathogen removal. When water recycling is simple, it often needs very little processing. However, when more intensive processing is required, the industry standard procedures include using UF, which is meant to remove physical solids from water by passing it through a semi-permeable membrane. Using ultrafiltration, solids are primarily captured by the filter and discarded.",
+    Title: "Chemicx Offerings Commercial RO Plant Services:",
   };
 
   const listItems1 = {
     listArray: [
-      "Complete New setup",
-      "Best Water Softener",
-      "Get Soft Water at Home",
-      "1 Year Warranty",
-      "Own manufacturing unit",
-      "Best team of experts",
-      "24/7 Customer Support",
-      "Fully Automatic Water Softener",
-      "Prevents build-up of minerals (scale) on the inside of pipes, fixtures, and hot water heaters.",
-      "Provides Clean and Reusable Water",
-      "Keeps Disease Away & Protect Environment",
-      "We have more than 20 years of experience in Water Treatment",
-      "Lengthens the life of some appliances.",
-      "Reduces or prevents mineral spots on glassware.",
-      "Prevents or reduces soap films and detergent curds in sinks, bathtubs, and washing machines.",
+      "No requirement for chemicals (coagulants, flocculants, disinfectants, pH adjustment)",
+      "Media depth filtration as opposed to size-exclusion filtration",
+      "Consistent quality of treated water in terms of the particle removal and microorganism removal",
+      "Compactness of the process and plant",
+      "Easy automation",
+      "Eco-friendly",
+      "Systems with modules help with easy installation",
+      "Efficient system of separation",
+      "Plant uses less energy",
+      "Excellent grade of treated water",
+      "Long-lasting membrane with low fouling conditions",
+      "Control panel with a manual or PLC.",
+      "Advanced controlling and monitoring system installed",
     ],
     Description: "",
   };
@@ -235,14 +211,14 @@ const product3 = () => {
       <ListCollection
         listItems={listItems?.listArray}
         Description={listItems?.Description}
-        LeftTitle="Domestic Water Softeners"
+        LeftTitle="Ultra Filtration"
         RightTitle="Our Area of Expertise"
         CTA=""
         url="/"
       />
 
       <BigBanner
-        Img="/assets/products/DomesticWaterSoft.png"
+        Img="/assets/products/UF.png"
         Title={BigbData?.Title}
         Description={BigbData?.Description}
         CTA=""
@@ -251,7 +227,7 @@ const product3 = () => {
       <ListCollection
         listItems={listItems1?.listArray}
         Description={listItems1?.Description}
-        LeftTitle="Domestic Water Softener plays an important role in water treatment industry."
+        LeftTitle="Benefits and features of ultrafiltration plants"
         RightTitle="IMPORTANT ROLE"
         CTA=""
         url="/"
@@ -265,13 +241,9 @@ const product3 = () => {
       />
 
       <Contact formConfig={contactFormConfig} />
-      <Footer
-        email="Nikhilbidhuri1@gmail.com"
-        phone="+91 9999455596"
-        socialLinks={socialLinks}
-      />
+      <Footer />
     </>
   );
 };
 
-export default product3;
+export default product5;
