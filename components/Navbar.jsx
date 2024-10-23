@@ -66,9 +66,15 @@ const Navbar = ({ logoSrc, logoAlt, navLinks, contactLink, menuIconSrc, closeIco
         <ul ref={navLinkRef} className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo">
           {navLinks.map((link, index) => (
             <li key={index} className="relative">
-              <button onClick={() => toggleSubMenu(index)} className="focus:outline-none">
-                {link.label}
-              </button>
+              {link.subMenu ? (
+                <button onClick={() => toggleSubMenu(index)} className="focus:outline-none">
+                  {link.label}
+                </button>
+              ) : (
+                <Link href={link.href}>
+                  {link.label}
+                </Link>
+              )}
               {link.subMenu && openSubMenuIndex === index && (
                 <ul className="absolute left-0 mt-2 py-2 w-48 bg-white shadow-lg rounded-md">
                   {link.subMenu.map((subLink, subIndex) => (
